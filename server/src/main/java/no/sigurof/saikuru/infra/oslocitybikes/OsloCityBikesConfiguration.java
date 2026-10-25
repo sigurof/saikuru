@@ -11,11 +11,11 @@ import tools.jackson.databind.json.JsonMapper;
 
 @EnableConfigurationProperties(OsloCityBikesProperties.class)
 @Configuration
-public class OsloCityBikesConfiguration {
+ class OsloCityBikesConfiguration {
 
     private final OsloCityBikesProperties clientProperties;
 
-    public OsloCityBikesConfiguration(OsloCityBikesProperties clientProperties) {
+     OsloCityBikesConfiguration(OsloCityBikesProperties clientProperties) {
         this.clientProperties = clientProperties;
     }
 

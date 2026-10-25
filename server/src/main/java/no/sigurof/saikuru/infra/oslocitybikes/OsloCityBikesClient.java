@@ -17,7 +17,7 @@ public class OsloCityBikesClient {
     private final RestTemplate restTemplate;
     private final String baseUrl;
 
-    public OsloCityBikesClient(
+    OsloCityBikesClient(
             @Qualifier("osloCityBikesRestTemplate") RestTemplate restTemplate,
             OsloCityBikesProperties properties) {
         this.restTemplate = restTemplate;

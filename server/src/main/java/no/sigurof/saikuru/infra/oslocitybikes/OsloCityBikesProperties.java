@@ -6,7 +6,7 @@ import org.springframework.validation.annotation.Validated;
 
 @Validated
 @ConfigurationProperties("no.sigurof.saikuru.integration.oslocitybikes.client")
-public record OsloCityBikesProperties(
+record OsloCityBikesProperties(
         @NotBlank String baseUrl,
         @NotBlank String id
 ) { }
