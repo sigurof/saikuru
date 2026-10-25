@@ -1,4 +1,4 @@
-package no.sigurof.saikuru;
+package no.sigurof.saikuru.infra;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
