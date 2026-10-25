@@ -25,10 +25,10 @@ class OsloCityBikesClientTest {
 
     @BeforeEach
     void beforeEach(WireMockRuntimeInfo wireMockRuntimeInfo) {
-        var configuration = new OsloCityBikesConfiguration();
-        OsloCityBikesClientProperties properties = new OsloCityBikesClientProperties(wireMockRuntimeInfo.getHttpBaseUrl());
+        OsloCityBikesProperties properties = new OsloCityBikesProperties(wireMockRuntimeInfo.getHttpBaseUrl(), CLIENT_ID);
+        var configuration = new OsloCityBikesConfiguration(properties);
         osloCityBikesClient = new OsloCityBikesClient(
-                configuration.restTemplate(CLIENT_ID), properties
+                configuration.restTemplate(), properties
         );
     }
 

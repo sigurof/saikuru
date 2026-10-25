@@ -19,7 +19,7 @@ public class OsloCityBikesClient {
 
     public OsloCityBikesClient(
             @Qualifier("osloCityBikesRestTemplate") RestTemplate restTemplate,
-            OsloCityBikesClientProperties properties) {
+            OsloCityBikesProperties properties) {
         this.restTemplate = restTemplate;
         this.baseUrl = properties.baseUrl();
     }
