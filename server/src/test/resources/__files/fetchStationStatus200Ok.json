@@ -1,0 +1,29 @@
+{
+  "last_updated": 1792950165,
+  "ttl": 15,
+  "version": "2.3",
+  "data": {
+    "stations": [
+      {
+        "station_id": "6026",
+        "is_installed": true,
+        "is_renting": true,
+        "is_returning": true,
+        "last_reported": 1792950176,
+        "num_vehicles_available": 18,
+        "num_bikes_available": 18,
+        "num_docks_available": 15,
+        "vehicle_types_available": [
+          {
+            "vehicle_type_id": "bike",
+            "count": 2
+          },
+          {
+            "vehicle_type_id": "ebike",
+            "count": 16
+          }
+        ]
+      }
+    ]
+  }
+}

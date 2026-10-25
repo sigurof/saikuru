@@ -28,6 +28,9 @@ dependencies {
 	testCompileOnly("org.projectlombok:lombok")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 	testAnnotationProcessor("org.projectlombok:lombok")
+	testImplementation("org.wiremock.integrations:wiremock-spring-boot:4.0.9")
+	testImplementation("org.assertj:assertj-core")
+
 }
 
 // Dependency locking ensures we don't rely on dynamic dependency versions. The following
