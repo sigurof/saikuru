@@ -38,6 +38,7 @@ dependencyLocking {
 	lockAllConfigurations()
 }
 
+// Run `./gradlew resolveAndLockAll --write-locks` to regenerate
 tasks.register("resolveAndLockAll") {
 	notCompatibleWithConfigurationCache("Filters configurations at execution time")
 	doFirst {
