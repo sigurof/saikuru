@@ -2,6 +2,15 @@
 
 A city bike application.
 
+## Pre-commit
+
+This repo uses [pre-commit](https://pre-commit.com) as a simplified "CI pipeline". Install it with e.g.
+`brew install pre-commit` or `pipx install pre-commit` and enable it:
+
+```bash
+pre-commit install
+```
+
 ## Task management
 
 You can find tasks and TODO's organized in [plan.md](./docs/tasks/index.md)
