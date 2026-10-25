@@ -1,10 +1,10 @@
-package no.sigurof.bysykkel;
+package no.sigurof.saikuru;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BysykkelApplicationTests {
+class SaikuruApplicationTests {
 
 	@Test
 	void contextLoads() {
