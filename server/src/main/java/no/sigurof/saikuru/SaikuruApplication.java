@@ -1,13 +1,13 @@
-package no.sigurof.saikuru.infra;
+package no.sigurof.saikuru;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-class SaikuruApplication {
+public class SaikuruApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(no.sigurof.saikuru.infra.SaikuruApplication.class, args);
+		SpringApplication.run(SaikuruApplication.class, args);
 	}
 
 }
