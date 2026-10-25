@@ -2,6 +2,23 @@
 
 A city bike application.
 
+## To start it
+
+First build it
+```bash
+cd server && ./gradlew bootBuildImage
+```
+
+Then create a `.env` file in the repository's root with your name
+```text
+CLIENT_NAME=FirstnameLastname
+```
+
+Then start it using Docker:
+```bash
+docker compose up
+```
+
 ## Pre-commit
 
 This repo uses [pre-commit](https://pre-commit.com) as a simplified "CI pipeline". Install it with e.g.

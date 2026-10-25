@@ -13,7 +13,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 @SpringBootTest(
         classes = SaikuruApplication.class,
         webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
-        properties = "no.sigurof.saikuru.integration.oslocitybikes.client.id=Test/Saikuru-ControllerTest"
+        properties = "client.name=ControllerTest"
 )
 class SaikuruControllerTest {
 

@@ -58,3 +58,7 @@ tasks.register("resolveAndLockAll") {
 tasks.withType<Test> {
 	useJUnitPlatform()
 }
+
+tasks.named<org.springframework.boot.gradle.tasks.bundling.BootBuildImage>("bootBuildImage") {
+	imageName = "saikuru-server:latest"
+}
