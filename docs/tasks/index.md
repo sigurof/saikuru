@@ -4,7 +4,7 @@ Standin for JIRA/Linear/Trello. This document tracks and sequences work to be do
 
 ## TODOs
 
-[ ] Add Wiremock test of new OsloCityBikeClient class
+[x] Add Wiremock test of new OsloCityBikeClient class
     the class returns the data on the same format as Oslo kommune
     Stubbed bysykkel API responses
     If Bysykkel API return 2xx, return data
