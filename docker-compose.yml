@@ -1,5 +1,6 @@
 services:
   server:
+    build: ./server
     image: saikuru-server:latest
     ports:
       - "8080:8080"

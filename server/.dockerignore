@@ -1,0 +1,8 @@
+# From local builds
+build/
+.gradle/
+.idea/
+
+# No local secrets into the build context
+application-local.properties
+.env

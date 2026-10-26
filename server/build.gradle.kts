@@ -62,6 +62,10 @@ tasks.withType<Test> {
 	useJUnitPlatform()
 }
 
+tasks.bootJar {
+	archiveFileName = "saikuru.jar"
+}
+
 tasks.named<org.springframework.boot.gradle.tasks.bundling.BootBuildImage>("bootBuildImage") {
 	imageName = "saikuru-server:latest"
 }
