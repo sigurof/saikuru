@@ -13,7 +13,6 @@ import java.util.stream.Collectors;
 @Repository
 public class BikeStationRepository {
 
-
     private final CachedOsloCityBikes osloCityBikes;
 
     BikeStationRepository(CachedOsloCityBikes osloCityBikes) {
@@ -63,16 +62,14 @@ public class BikeStationRepository {
     }
 
     private static BikeStation.Rentals buildRentals(OsloCityBikesClient.StationStatus status) {
-        var ebikeCount = findEbikeVehicleType(status)
+        int ebikeCount = findEbikeVehicleType(status)
                 .map(OsloCityBikesClient.VehicleType::getCount)
                 .orElse(0);
         return BikeStation.Rentals.builder()
-                .totalAvailable(status.getNumbVehiclesAvailable())
+                .totalAvailable(status.getNumVehiclesAvailable())
                 .allowed(status.isRenting())
                 .numEbikes(ebikeCount)
-                // TODO This number should be equal to NumbBikesAvailable but isn't guaranteed to, since there is
-                //  redundancy in the API
-                .numBikes(status.getNumbVehiclesAvailable() - ebikeCount)
+                .numBikes(status.getNumBikesAvailable())
                 .build();
     }
 

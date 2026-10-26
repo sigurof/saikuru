@@ -105,7 +105,7 @@ public class OsloCityBikesClient {
         boolean isRenting;
         boolean isReturning;
         long lastReported;
-        int numbVehiclesAvailable;
+        int numVehiclesAvailable;
         int numBikesAvailable;
         int numDocksAvailable;
         List<VehicleType> vehicleTypesAvailable;
