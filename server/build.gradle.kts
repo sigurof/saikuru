@@ -18,6 +18,9 @@ repositories {
 }
 
 dependencies {
+	// TODO In-memory caching for now. Can be replaced with Redis or DB if needed in cloud
+	implementation("com.github.ben-manes.caffeine:caffeine")
+
 	implementation("org.springframework.boot:spring-boot-starter-restclient")
 	implementation("org.springframework.boot:spring-boot-starter-webmvc")
 	implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:3.1.0")

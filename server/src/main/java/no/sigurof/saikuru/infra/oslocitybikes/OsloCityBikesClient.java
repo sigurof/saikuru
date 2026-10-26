@@ -29,8 +29,8 @@ public class OsloCityBikesClient {
     @Jacksonized
     public static class VehicleType {
         // TODO Consider making enum?
-        public final String vehicleTypeId;
-        public final int count;
+        private final String vehicleTypeId;
+        private final int count;
     }
 
     public static class LonLatPair extends ArrayList<Double> {
